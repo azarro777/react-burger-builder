@@ -1,9 +1,13 @@
 import classes from "./App.module.css";
+import Layout from "./components/Layout/Layout";
+import BurgerBuilder from "./containers/BurgerBuilder/BurgerBuilder";
 
 function App() {
   return (
     <div className={classes.App}>
-      <h1>Hi, It's my app for create and purchase burgers</h1>
+      <Layout>
+        <BurgerBuilder />
+      </Layout>
     </div>
   );
 }
